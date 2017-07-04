@@ -13,9 +13,7 @@ todoComponent.render = function () {
   return (
     <div className="todo-container">
       <PageHeader headerText={this.state.headerText} />
-      <ul>
-        <TodoList />
-      </ul>
+      <TodoList />
     </div>
   );
 };
