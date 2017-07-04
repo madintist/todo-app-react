@@ -1,18 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import CompleteItemButton from './CompleteItemButton';
 import './TodoListItem.css';
 
-const todoListItemComponent = Object.create(Component.prototype);
-
-todoListItemComponent.render = function (props) {
+function TodoListItem (props) {
   return (
     <li>
-      {this.props.todoTitle}
-      <CompleteItemButton targetItem={this.props.key} />
+      {props.title}
+      <CompleteItemButton target={props.key} />
     </li>
   );
-};
-
-const TodoListItem = () => todoListItemComponent;
+}
 
 export default TodoListItem;
