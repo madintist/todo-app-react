@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import PageHeader from './PageHeader';
 import './Todo.css';
 
-const Todo = Object.create(Component.prototype);
+const todoComponent = Object.create(Component.prototype);
 
-Todo.state = {
+todoComponent.state = {
   headerText: 'Todo List'
 };
 
-Todo.render = function () {
+todoComponent.render = function () {
   return (
     <div className="todo-container">
       <PageHeader headerText={this.state.headerText} />
@@ -17,4 +17,6 @@ Todo.render = function () {
   );
 };
 
-export default () => Todo;
+const Todo = () => todoComponent;
+
+export default Todo;
