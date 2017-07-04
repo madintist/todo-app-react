@@ -1,16 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './CompleteItemButton.css';
 
-const completeItemButtonComponent = Object.create(Component.prototype);
-
-completeItemButtonComponent.render = function () {
+function CompleteItemButton (props) {
   return (
     <button>
       <i class="fa fa-check" aria-hidden="true"></i>
     </button>
   );
-};
-
-const CompleteItemButton = () => completeItemButtonComponent;
+}
 
 export default CompleteItemButton;
