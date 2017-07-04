@@ -29,10 +29,7 @@ todoListComponent.state = {
 };
 
 todoListComponent.render = function () {
-  return (
-    <ul>
-    </ul>
-  );
+  return;
 };
 
 const TodoList = () => todoListComponent;
