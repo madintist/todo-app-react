@@ -4,7 +4,7 @@ import './CompleteItemButton.css';
 function CompleteItemButton (props) {
   return (
     <button>
-      <i class="fa fa-check" aria-hidden="true"></i>
+      <i className="fa fa-check"></i>
     </button>
   );
 }
