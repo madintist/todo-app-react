@@ -37,7 +37,7 @@ class TodoList extends React.Component {
       return !item.complete;
     });
     const itemList = incompleteItems.map(function (item) {
-      return <TodoListItem key={item.id} title={item.title} />;
+      return <TodoListItem key={item.id} item={item} />;
     });
 
     return (

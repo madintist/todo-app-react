@@ -5,8 +5,8 @@ import './TodoListItem.css';
 function TodoListItem (props) {
   return (
     <li>
-      {props.title}
-      <CompleteItemButton target={props.key} />
+      {props.item.title}
+      <CompleteItemButton target={props.item.id} />
     </li>
   );
 }
