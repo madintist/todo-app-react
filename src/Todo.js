@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './Todo.css';
 
-const todoComponent = Object.create(Component.prototype);
+const Todo = Object.create(Component.prototype);
 
-todoComponent.state = {
+Todo.state = {
   headerText: 'Todo List'
 };
 
-todoComponent.render = function () {
+Todo.render = function () {
   return (
     <div className="todo-container">
       {/* Page header here */}
@@ -16,6 +16,4 @@ todoComponent.render = function () {
   );
 };
 
-const Todo = () => todoComponent;
-
-export default Todo;
+export default () => Todo;
