@@ -32,6 +32,13 @@ class TodoList extends React.Component {
     };
   }
 
+  completeItem (id) {
+    this.setState(function (previousState, props) {
+      console.log('Previous State:', previousState);
+      console.log('Props:', props);
+    });
+  }
+
   render () {
     const incompleteItems = this.state.todoItems.filter(function (item) {
       return !item.complete;
