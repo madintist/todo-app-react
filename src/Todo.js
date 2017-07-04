@@ -3,6 +3,10 @@ import './Todo.css';
 
 const todoComponent = Object.create(Component.prototype);
 
+todoComponent.state = {
+  headerText: 'Todo List'
+};
+
 todoComponent.render = function () {
   return (
     <div className="todo-container">
