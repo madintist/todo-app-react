@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TodoListItem from './TodoListItem';
 import './TodoList.css';
 
 const todoListComponent = Object.create(Component.prototype);
@@ -28,8 +29,16 @@ todoListComponent.state = {
   ]
 };
 
+todoListComponent.incompleteItems = todoListComponent.state.todoItems.map(function (item) {
+  return <TodoListItem key={item.id} todoItem={item} />;
+});
+
 todoListComponent.render = function () {
-  return;
+  return (
+    <ul>
+      {this.incompleteItems}
+    </ul>
+  );
 };
 
 const TodoList = () => todoListComponent;
