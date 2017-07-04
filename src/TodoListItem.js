@@ -7,8 +7,8 @@ const todoListItemComponent = Object.create(Component.prototype);
 todoListItemComponent.render = function (props) {
   return (
     <li>
-      {this.props.todoItem.title}
-      <CompleteItemButton targetItem={this.props.todoItem.id} />
+      {this.props.todoTitle}
+      <CompleteItemButton targetItem={this.props.key} />
     </li>
   );
 };

@@ -30,7 +30,7 @@ todoListComponent.state = {
 };
 
 todoListComponent.incompleteItems = todoListComponent.state.todoItems.map(function (item) {
-  return <TodoListItem key={item.id} todoItem={item} />;
+  return <TodoListItem key={item.id} todoTitle={item.title} />;
 });
 
 todoListComponent.render = function () {
