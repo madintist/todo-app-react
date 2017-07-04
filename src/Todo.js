@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PageHeader from './PageHeader';
 import './Todo.css';
 
 const Todo = Object.create(Component.prototype);
@@ -10,7 +11,7 @@ Todo.state = {
 Todo.render = function () {
   return (
     <div className="todo-container">
-      {/* Page header here */}
+      <PageHeader headerText={this.state.headerText} />
       {/* Todo list here */}
     </div>
   );
