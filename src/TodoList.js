@@ -33,8 +33,16 @@ class TodoList extends React.Component {
   }
 
   render () {
+    const incompleteItems = this.state.todoItems.filter(function (item) {
+      return !item.complete;
+    });
+    const itemList = incompleteItems.map(function (item) {
+      return <TodoListItem key={item.id} title={item.title} />;
+    });
+
     return (
       <ul>
+        {itemList}
       </ul>
     );
   }
