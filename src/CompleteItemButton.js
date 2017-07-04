@@ -5,7 +5,7 @@ const completeItemButtonComponent = Object.create(Component.prototype);
 
 completeItemButtonComponent.render = function () {
   return (
-    <button onClick={/* complete item */}>
+    <button>
       <i class="fa fa-check" aria-hidden="true"></i>
     </button>
   );
