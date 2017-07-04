@@ -1,17 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Todo from './Todo';
 import './App.css';
 
-const appComponent = Object.create(Component.prototype);
-
-appComponent.render = function () {
+function App () {
   return (
     <div className="App">
       <Todo />
     </div>
   );
-};
-
-const App = () => appComponent;
+}
 
 export default App;
