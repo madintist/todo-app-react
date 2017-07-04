@@ -26,22 +26,12 @@ todoListComponent.state = {
       title: 'Item 4',
       complete: false
     }
-  ],
-  get incompleteItems () {
-    return this.todoItems.filter(function (item) {
-      return !item.complete;
-    });
-  }
+  ]
 };
 
 todoListComponent.render = function () {
-  var todoListItems = this.state.incompleteItems.map(function (item) {
-    return <TodoListItem todoItem={item} />;
-  });
-
   return (
     <ul>
-      {todoListItems}
     </ul>
   );
 };
