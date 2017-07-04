@@ -1,23 +1,25 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PageHeader from './PageHeader';
 import TodoList from './TodoList';
 import './Todo.css';
 
-const todoComponent = Object.create(Component.prototype);
+class Todo extends React.Component {
+  constructor () {
+    super();
 
-todoComponent.state = {
-  headerText: 'Todo List'
-};
+    this.state = {
+      headerText: 'Todo List'
+    };
+  }
 
-todoComponent.render = function () {
-  return (
-    <div className="todo-container">
-      <PageHeader headerText={this.state.headerText} />
-      <TodoList />
-    </div>
-  );
-};
-
-const Todo = () => todoComponent;
+  render () {
+    return (
+      <div className="todo-container">
+        <PageHeader headerText={this.state.headerText} />
+        <TodoList />
+      </div>
+    );
+  }
+}
 
 export default Todo;
