@@ -6,7 +6,7 @@ function TodoListItem (props) {
   return (
     <li>
       {props.item.title}
-      <CompleteItemButton target={props.item.id} />
+      <CompleteItemButton target={props.item} />
     </li>
   );
 }
