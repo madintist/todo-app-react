@@ -6,7 +6,7 @@ const todoListItemComponent = Object.create(Component.prototype);
 todoListItemComponent.render = function (props) {
   return (
     <li>
-      {props.todoItem.title}
+      {this.props.todoItem.title}
       {/* Complete button here */}
     </li>
   );
