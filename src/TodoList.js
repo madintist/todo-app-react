@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import TodoListItem from './TodoListItem';
 import './TodoList.css';
 
 const todoListComponent = Object.create(Component.prototype);
